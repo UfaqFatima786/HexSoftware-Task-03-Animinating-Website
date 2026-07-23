@@ -11,7 +11,7 @@ html {
 
 body {
 
-    background: linear-gradient(135deg, #f7c8cd, #f56e94);
+    background: linear-gradient(135deg, #548af0, #7a39f3);
     color: white;
     min-height: 100vh;
     margin: 0;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(135deg, #f7c2e7, #9e325f, #e91b60);
+    background: linear-gradient(135deg, #cbe4f8, #7f329e, #1c2aaa);
     border-radius: 20px;
     box-shadow: #9aecbc;
 }
@@ -37,4 +37,25 @@ body {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+}
+
+.laptop-hero {
+    background: linear-gradient(135deg, #406eec, #9314c5);
+    box-shadow: rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+}
+
+.img-laptop {
+    width: 550px;
+    height: 400px;
+    transform: scale(1.05);
+}
+
+.img-laptop:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.9s;
+    cursor: pointer;
+    animation-name: __flash;
+    animation: slideFade 0.5s ease forwards;
 }
