@@ -11,7 +11,7 @@ html {
 
 body {
 
-    background: linear-gradient(135deg, #548af0, #7a39f3);
+    background-color: #d05aff;
     color: white;
     min-height: 100vh;
     margin: 0;
@@ -46,7 +46,7 @@ body {
 }
 
 .img-laptop {
-    width: 550px;
+    width: 600px;
     height: 500px;
     transform: scale(1.05);
 }
@@ -58,4 +58,23 @@ body {
     cursor: pointer;
     animation-name: __flash;
     animation: slideFade 0.5s ease forwards;
+}
+.heading1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Georgia, serif;
+    transition: all 0.4s ease;
+
+}
+
+.heading1:hover {
+    cursor: pointer;
+    color: rgb(221, 220, 220);
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
 }
