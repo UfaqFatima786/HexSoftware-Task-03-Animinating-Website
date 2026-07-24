@@ -10,8 +10,7 @@ html {
 }
 
 body {
-
-    background-color: #d05aff;
+        background: linear-gradient(135deg, #000000, #bebfca);
     color: white;
     min-height: 100vh;
     margin: 0;
@@ -20,7 +19,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(135deg, #cbe4f8, #7f329e, #1c2aaa);
+    background: linear-gradient(135deg, #7f329e, #1c2aaa);
     border-radius: 20px;
     box-shadow: #9aecbc;
 }
@@ -46,7 +45,7 @@ body {
 }
 
 .img-laptop {
-    width: 600px;
+    width: 650px;
     height: 500px;
     transform: scale(1.05);
 }
@@ -60,7 +59,7 @@ body {
     animation: slideFade 0.5s ease forwards;
 }
 .heading1 {
-    color: white;
+    color: rgb(43, 40, 40);
     font-size: 2.5rem;
     font-weight: 700;
     font-style: italic;
@@ -71,10 +70,15 @@ body {
 
 .heading1:hover {
     cursor: pointer;
-    color: rgb(221, 220, 220);
+    color: rgba(39, 38, 38, 0.664);
     font-size: 2.5rem;
     font-weight: 600;
     font-style: italic;
     letter-spacing: 2px;
     font-family: Georgia, serif;
+}
+.laptop-para{
+    color: black;
+    font-style: italic;
+    font-size: 25px;
 }
