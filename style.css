@@ -47,6 +47,7 @@ body {
 .img-laptop {
     width: 650px;
     height: 475px;
+    border-radius: 50%;
     transform: scale(1.05);
 }
 
@@ -83,10 +84,6 @@ body {
     font-style: italic;
     font-size: 25px;
 }
-
-/* ===========================
-        ABOUT SECTION
-=========================== */
 
 .about {
     width: 100%;
@@ -125,6 +122,7 @@ body {
     transition: 0.9s;
     animation-name: __flash;
     animation: slideFade 0.5s ease forwards;
+    box-shadow: 0 0 40px #000000;
 }
 
 .about-content {
@@ -136,13 +134,13 @@ body {
 }
 
 .about-content h4 {
-    color: #2563eb;
+    color: #011542;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .about-content h2 {
-    color: rgb(87, 87, 87);
+    color: rgb(36, 35, 35);
     font-size: 2.5rem;
     font-weight: 700;
     font-style: italic;
@@ -152,11 +150,11 @@ body {
 
 .about-content h2:hover {
     cursor: pointer;
-    color: rgba(36, 29, 29, 0.664);
-    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 2.5rem;
     font-weight: 600;
     font-style: italic;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-family: Georgia, serif;
 }
 
@@ -188,7 +186,7 @@ body {
 }
 
 .box:hover {
-        background: rgb(194, 188, 252);
+    background: rgb(194, 188, 252);
     cursor: pointer;
     transform: translateY(-10px);
     box-shadow: 0 0 40px #000000;
