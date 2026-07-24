@@ -204,8 +204,8 @@ body {
 .about-content button {
     padding: 14px 35px;
     border: none;
-    background: #2563eb;
-    color: white;
+    background: #a0bcfa;
+    color: rgb(0, 0, 0);
     border-radius: 40px;
     cursor: pointer;
     transition: .4s;
@@ -213,7 +213,8 @@ body {
 
 .about-content button:hover {
     cursor: pointer;
-    background: #0f172a;
+    background: #335197;
+    color: white;
 }
 
 @keyframes slideLeft {
