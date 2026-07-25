@@ -33,7 +33,7 @@ body {
 }
 
 .logo-1 {
-    width: 70px;
+    width: 100px;
     height: 70px;
     border-radius: 50%;
 }
@@ -246,6 +246,7 @@ body {
 }
 
 .features{
+    border-radius: 20px;
     padding:100px 10%;
     background: linear-gradient(135deg, #5a83f7, #c239f8);
 }
