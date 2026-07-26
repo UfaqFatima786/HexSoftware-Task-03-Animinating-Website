@@ -95,6 +95,7 @@ body {
     padding: 80px 10%;
     background: linear-gradient(135deg, #5a83f7, #c239f8);
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .a {
@@ -157,12 +158,6 @@ body {
     letter-spacing: 1px;
     font-family: Georgia, serif;
 }
-
-/* .about-content h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #111;
-} */
 
 .about-content p {
     color: #000000;
@@ -249,11 +244,32 @@ body {
     border-radius: 20px;
     padding: 100px 10%;
     background: linear-gradient(135deg, #5a83f7, #c239f8);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
 }
 
 .section-heading {
     text-align: center;
     margin-bottom: 70px;
+}
+
+.section-heading,
+.heading {
+    animation: fadeDown 1.2s ease;
+}
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 .section-heading h5 {
@@ -405,7 +421,9 @@ body {
 .projects {
     border-radius: 20px;
     padding: 100px 0;
-    background: linear-gradient(135deg, #a556ff, #402b63, #9193f1);
+    background: linear-gradient(135deg, #a556ff, #5e3f8f, #9193f1);
+        background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
 }
 
 .heading span {
@@ -437,6 +455,9 @@ body {
     transition: .5s;
     height: 100%;
     position: relative;
+    opacity: 0;
+    transform: translateY(80px);
+    animation: fadeUp 1s forwards;
 }
 
 .project-card:hover {
@@ -474,10 +495,46 @@ body {
 }
 
 .project-content p {
-    color: #b8c1ce;
+    color: hsl(0, 0%, 100%);
     line-height: 1.9;
     font-size: 16px;
     margin-bottom: 25px;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.project-card:nth-child(4) {
+    animation-delay: .8s;
+}
+
+.project-card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.project-card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.project-card:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.project-card:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
+.project-card:nth-child(9) {
+    animation-delay: 1.8s;
 }
 
 .technology {
@@ -555,10 +612,36 @@ body {
     transition: .5s;
 }
 
+.project-btn a {
+    animation: pulse 2s infinite;
+}
+
+.contact-form button {
+    animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
 .contact {
     border-radius: 20px;
     padding: 100px 0;
     background: linear-gradient(135deg, #5a83f7, #c239f8);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
 }
 
 .contact .heading span {
@@ -668,11 +751,41 @@ body {
     color: #ffffff;
 }
 
+.icon {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.info-box i {
+    animation: floating 2s ease-in-out infinite;
+}
+
+.social-icons a {
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
 .footer {
     background: linear-gradient(135deg, #406eec, #9314c5);
     padding: 60px 10%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-size: 300% 300%;
+    animation: gradientMove 3s ease infinite;
 }
 
 .footer-container {
@@ -721,13 +834,13 @@ body {
 
 .social-icons a {
     text-decoration: none;
-    color: #d68df8;
+    color: #f0d6fc;
     font-size: 40px;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: #a235fc;
+    color: #d7a9fc;
     transform: translateX(5px);
 }
 
@@ -743,28 +856,39 @@ body {
     font-size: 14px;
 }
 
-@media(max-width:900px) {
+.footer-col {
 
-    .about {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
 
-        flex-direction: column;
+.footer-col:nth-child(1) {
+    animation-delay: .3s;
+}
 
-        text-align: center;
+.footer-col:nth-child(2) {
+    animation-delay: .6s;
+}
 
+.footer-col:nth-child(3) {
+    animation-delay: .9s;
+}
+
+.footer-col:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
     }
 
-    .about-boxes {
-
-        justify-content: center;
-
-        flex-wrap: wrap;
-
+    50% {
+        background-position: 100% 50%;
     }
 
-    .about-content h2 {
-
-        font-size: 32px;
-
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -785,6 +909,27 @@ body {
 
     .contact-form {
         margin-top: 40px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+}
+
+@media(max-width:900px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-boxes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
     }
 }
 
